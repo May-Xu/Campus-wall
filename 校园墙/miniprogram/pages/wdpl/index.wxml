@@ -1,0 +1,16 @@
+<view wx:if="{{pinglun}}" style="text-align:center;">
+  <image class="zanwu_tz" src="/images/zanwu_pl.png"></image>
+  <view class="text-xl">暂无帖子</view>
+</view>
+<view wx:if="{{!pinglun}}">
+  <view  wx:for="{{comment}}" wx:key="id">
+    <view class="cu-bar bg-white margin-top">
+      <view class="action flag" style="width: 70%;justify-content:flex-start;display:block;" data-flag_id="{{item.flag_id}}" bindtap="nav">
+        <text class="cuIcon-title text-orange"></text> {{item.text}}
+      </view>
+      <view class="action">
+        <button class="cu-btn bg-red shadow" bindtap="remove" data-_id="{{item._id}}">删除</button>
+      </view>
+    </view>
+  </view>
+</view>

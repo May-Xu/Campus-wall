@@ -1,0 +1,66 @@
+page{
+  background-color: #ffffff;
+}
+.container {
+  background-color: #F2f2f2;
+  min-height: 100%;
+  display: block;
+}
+.Courier-container{
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap:wrap;
+  box-sizing: content-box;
+  padding: 24rpx;
+  background-color: #ffffff;
+}
+.Courier-box{
+  width: 339rpx;
+  height: auto;
+  box-shadow:0 3rpx 10px 2px lightgrey;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 24rpx;
+  border-radius:5px;
+}
+.Courier-box .img-box{
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+.Courier-box .img-box image{
+   width: 100%;
+   height: 100px;
+}
+.Courier-box .Courier-title{
+  width: 280rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 26rpx;
+  padding: 24rpx 0 0rpx 0;
+  color:#000;
+  margin-left: 24rpx;
+}
+.cartoo_content{
+  text-align: center;
+  width: 95%;
+  color: #000000;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.zanwu_tz{
+  height: 100px;
+  width: 140px;
+  margin-top: 50%;
+}
+.del{
+  font-size: 13px;
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+}

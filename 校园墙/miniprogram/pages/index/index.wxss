@@ -1,0 +1,113 @@
+
+.remind-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 300rpx;
+}
+.remind-img {
+  width: 330rpx;
+  height: 330rpx;
+  padding-bottom: 25rpx;
+}
+
+.avatar{
+  margin-left: 5px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+}
+.cartoo_content{
+  /* text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; */
+  width: 80%;
+  color: #000000;
+  font-size: 13px;
+
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  align-content: center;
+}
+.three_bk{
+  display: flex;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 10px;
+  justify-content: space-around;
+}
+
+.Scancode {
+  /* font-size: 39rpx;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center; */
+  position: fixed;
+  width:60px;
+  height:60px;
+  bottom: 40px;
+  right: 30px;
+}
+.xfan{
+  height: 60px;
+  width: 60px;
+}
+
+.container {
+  background-color: #ffffff;
+  min-height: 100%;
+  display: block;
+}
+.Courier-container{
+  display: flex;
+  justify-content: space-between;  
+  flex-wrap:wrap;
+  box-sizing: content-box;
+  padding: 24rpx;
+  background-color: #ffffff;
+}
+.Courier-box{
+  width: 339rpx;
+  height: auto;
+  box-shadow:0 3rpx 10px 2px lightgrey;
+  background-color: #fff;
+  overflow: hidden;
+  margin-bottom: 24rpx;
+  border-radius:5px;
+}
+.Courier-box .img-box{
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+.Courier-box .img-box image{
+   width: 100%;
+   height: 100px;
+}
+.Courier-box .Courier-title{
+  width: 280rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 26rpx;
+  padding: 24rpx 0 0rpx 0;
+  color:#000;
+  margin-left: 24rpx;
+}
+.Courier-box .Courier-price{
+  width: 280rpx;
+  overflow: hidden;
+  font-size: 24rpx;
+  padding: 24rpx 0;
+  color:#0066FF;
+  margin-left: 24rpx;
+}

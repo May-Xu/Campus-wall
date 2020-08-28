@@ -1,0 +1,49 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">帖子详情</view>
+</cu-custom>
+<view class="cu-card dynamic no-card">
+  <view class="cu-item shadow">
+    <view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url({{details.avatar}});"></view>
+        <view class="content flex-sub">
+          <view>{{details.username}}</view>
+          <view class="text-gray text-sm flex justify-between">
+            {{details.time}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="text-content">
+      {{details.content}}
+    </view>
+    <view class="grid flex-sub padding-lr col-1">
+      <image class="bg-img only-img" style="height:170px;" src="{{details.image}}" data-img="{{details.image}}" bindtap="ViewImage"></image>
+    </view>
+  </view>
+</view>
+<view class="container">
+  <view class="tui-cmt-title">精彩评论（{{pinglun_num}}）</view>
+  <view class="tui-cmtbox" wx:for="{{pinglun}}" wx:key="id">
+    <view class="tui-cmt-cell">
+      <image src="{{item.avatar}}" class="tui-avatar"></image>
+      <view class="tui-cmt-detail">
+        <view class="tui-header-box">
+          <view class="tui-cmt-nickname">{{item.username}}</view>
+        </view>
+        <view class="tui-cmt-content">
+          {{item.text}}
+        </view>
+        <view class="tui-footer">
+          {{item.time}}
+          <view wx:if="{{item.del_flag}}" class="tui-primary tui-ml" data-aid="{{item._id}}" bindtap="del_comment">删除</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-bar foot input {{InputBottom!=0?'cur':''}}" style="bottom:{{InputBottom}}px">
+  <input class="solid-bottom" value="{{text}}" bindfocus="InputFocus" bindinput="bindinput" bindblur="InputBlur" adjust-position="{{false}}" focus="{{false}}" maxlength="300" cursor-spacing="10"></input>
+  <button class="cu-btn bg-green shadow" bindtap="comment">评论</button>
+</view>

@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/wode/index",
+    "pages/detail/index",
+    "pages/fabu/index",
+    "pages/wdfb/index",
+    "pages/wdpl/index"
+  ],
+  "window": {
+    "backgroundColor": "#FFE411",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFE411",
+    "navigationBarTitleText": "校园广场",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "cu-custom": "/style/components/cu-custom"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/tabbar/home.png",
+        "text": "广场",
+        "selectedIconPath": "images/tabbar/home_cur.png"
+      },
+      {
+        "pagePath": "pages/wode/index",
+        "iconPath": "images/tabbar/about.png",
+        "text": "我的",
+        "selectedIconPath": "images/tabbar/about_cur1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "debug":true
+}

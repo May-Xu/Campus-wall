@@ -1,0 +1,30 @@
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+	<view slot="backText">返回</view>
+	<view slot="content">我的帖子</view>
+</cu-custom>
+<view wx:if="{{tiezi}}" style="text-align:center;">
+  <image class="zanwu_tz" src="/images/zanwu_tz.png"></image>
+  <view class="text-xl">暂无帖子</view>
+</view>
+<view wx:if="{{!tiezi}}">
+  <view class='container'>
+    <view class="Courier-container">
+      <block wx:for="{{cartoon}}" wx:key="id">
+        <view class="Courier-box">
+          <view class="img-box" data-id="{{item._id}}" bindtap="nav">
+            <image src="{{item.image}}" class="image" mode="aspectFill" lazy-load="true" />
+          </view>
+          <view class="cu-list menu">
+            <view class="cu-item" style="padding:0;min-height:50rpx;">
+              <view class="content" style="display:flex;overflow: hidden;">
+                <text class="cartoo_content">{{item.content}}</text>
+              </view>
+            </view>
+          </view>
+          <button type='warn' data-id="{{item._id}}" class='del' bindtap='onRemove'>删除</button>
+          <text decode="true">&nbsp;</text>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

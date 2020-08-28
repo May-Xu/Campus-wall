@@ -1,0 +1,24 @@
+
+<view class="UCenter-bg">
+  <image src="{{ userInfo.avatarUrl }}" class="png" mode="widthFix"></image>
+  <view class="margin-top-sm">
+    <text style="color:#ffffff">{{userInfo.nickName}}</text>
+  </view>
+  <view class="text-xl">快乐生活每一天</view>
+  <image src="/images/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+</view>
+<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+  <view class="cu-item arrow">
+    <view class="content" hover-class="none" bindtap="wdfb">
+      <image src="/images/fabu.png" mode="aspectFit"></image>
+      <text class="text-grey" style="color:#515151;">我的发布</text>
+    </view>
+  </view>
+  <view class="cu-item arrow">
+    <view class="content" hover-class="none" bindtap="wdpl">
+      <image src="/images/comment.png" mode="aspectFit"></image>
+      <text class="text-grey" style="color:#515151;">我的评论</text>
+    </view>
+  </view>
+</view>
+<view class="cu-tabbar-height"></view>

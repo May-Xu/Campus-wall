@@ -1,0 +1,11 @@
+.flag{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-orient: vertical;
+}
+.zanwu_tz{
+  height: 140px;
+  width: 140px;
+  margin-top: 40%;
+}

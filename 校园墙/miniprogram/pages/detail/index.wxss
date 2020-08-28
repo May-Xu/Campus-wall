@@ -1,0 +1,83 @@
+page{
+  background-color: #ffffff;
+}
+.container {
+  padding: 40rpx 30rpx 110rpx 30rpx;
+  box-sizing: border-box;
+}
+.tui-cmt-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  position: relative;
+}
+.tui-cmt-title::after {
+  content: '';
+  position: absolute;
+  left: -18rpx;
+  top: 18%;
+  width: 6rpx;
+  height: 64%;
+  background: #5677fc;
+}
+.tui-cmtbox {
+  padding-bottom: 20rpx;
+}
+
+.tui-cmt-cell {
+  display: flex;
+  /* align-items: flex-start; */
+  justify-content: flex-start;
+  padding-top: 44rpx;
+}
+
+.tui-avatar {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 32rpx;
+  display: block;
+  flex-shrink: 0;
+}
+
+.tui-cmt-detail {
+  padding-left: 16rpx;
+  box-sizing: border-box;
+}
+
+.tui-header-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 30rpx;
+}
+
+.tui-cmt-nickname {
+  color: #5677fc;
+}
+
+.tui-fabulous {
+  color: #9a9a9a;
+}
+
+.tui-cmt-content {
+  font-size: 32rpx;
+  color: #333;
+  text-align: justify;
+  padding-top: 8rpx;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.tui-footer {
+  display: flex;
+  align-items: center;
+  font-size: 24rpx;
+  margin-top: 16rpx;
+  color: #9a9a9a;
+}
+
+.tui-primary {
+  color: #5677fc !important;
+}
+
+.tui-ml {
+  margin-left: 16rpx;
+}
