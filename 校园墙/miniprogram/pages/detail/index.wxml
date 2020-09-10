@@ -19,7 +19,7 @@
       {{details.content}}
     </view>
     <view class="grid flex-sub padding-lr col-1">
-      <image class="bg-img only-img" style="height:170px;" src="{{details.image}}" data-img="{{details.image}}" bindtap="ViewImage"></image>
+      <image class="bg-img only-img" mode="aspectFill" style="height:170px;" src="{{details.image}}" data-img="{{details.image}}" bindtap="ViewImage"></image>
     </view>
   </view>
 </view>
